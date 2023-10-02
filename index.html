@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<script src="https://unpkg.com/htmx.org@1.9.5" integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO" crossorigin="anonymous"></script>
 
@@ -93,21 +94,32 @@
 				<div class="container">
 					<header>
 						<h2>Here’s some stuff I made recently.</h2>
+						<h3>You can click on the image to play the game or on the name to check the website</h3>
 						
 					</header>
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<div class="image featured" htm-x><img src="https://img.itch.zone/aW1nLzEzNDIzODA3LnBuZw==/315x250%23c/mFvTry.png" alt="" /></div>
-								<h3><a href="https://mateors1.itch.io/hauntoy">Hauntoy</a></h3>
+								<div hx-get="/game1.html" hx-target="#unityGames"  class="image featured"><img src="https://img.itch.zone/aW1nLzEzNDIzODA3LnBuZw==/315x250%23c/mFvTry.png" alt="" /></div>
+								<h3><a href="#">Hauntoy</a></h3>
 								<p>Game Design, level design, game logic, Music Composition. </p>
 							</article>
 						</div>
+
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<div hx-get="/game2.html" hx-target="#unityGames"  class="image featured"><img src="https://img.itch.zone/aW1nLzEzNTU5MjM3LmpwZw==/original/L%2FTk9y.jpg" alt="" /></div>
+								<h3><a href="#">God Dam It/a></h3>
+								<p>Game Design, level design, game logic, Music Composition, sound design </p>
+							</article>
+						</div>
+						<div class="row"></div>
+						<div class="aln-center" id="unityGames"></div>
 						
 					</div>
 					<footer>
 						<div class="row"></div>
-						<div id="unityGame"></div>
+					
 						<p>Any Questions?</p>
 						<a href="#contact" class="button large scrolly">Get in touch with me</a>
 					</footer>
